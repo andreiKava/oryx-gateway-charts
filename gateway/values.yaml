@@ -127,7 +127,7 @@ kafka:
   zookeeper:
     enabled: true
     name: "zookeeper"
-    image: confluentinc/cp-zookeeper:6.2.7
+    image: confluentinc/cp-zookeeper:latest
     replicas: 3
     updateStrategy: "RollingUpdate"
     settings:
@@ -159,7 +159,7 @@ kafka:
   broker:
     enabled: true
     name: "broker"
-    image: confluentinc/cp-kafka:6.2.7
+    image: confluentinc/cp-kafka:latest
     replicas: 3
     updateStrategy: "RollingUpdate"
     settings:
@@ -187,7 +187,7 @@ kafka:
   schemaregistry:
     enabled: true
     name: "schemaregistry"
-    image: confluentinc/cp-schema-registry:6.2.7
+    image: confluentinc/cp-schema-registry:latest
     replicas: 3
     updateStrategy: "RollingUpdate"
     settings:
@@ -206,7 +206,7 @@ kafka:
   ksqldb:
     enabled: true
     name: "ksqldb"
-    image: confluentinc/cp-ksqldb-server:6.2.7
+    image: confluentinc/cp-ksqldb-server:latest
     replicas: 3
     updateStrategy: "RollingUpdate"
     settings:
